@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bio — Matthew Kim</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+
+<nav>
+  <a class="logo" href="index.html">Matthew Kim</a>
+  <div class="nav-links">
+    <a class="" href="index.html">Home</a>
+    <a class="active" href="bio.html">Bio</a>
+    <a class="" href="contact.html">Contact</a>
+  </div>
+  <button class="menu" aria-label="Menu" aria-expanded="false">☰</button>
+</nav>
+
+<aside class="social-sidebar" aria-label="Social links">
+  <a class="social-icon" href="mailto:matthewkimmusic@gmail.com" aria-label="Email Matthew Kim" title="Email">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5h18v13H3z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.7"/></svg>
+    </a>
+  <a class="social-icon" href="https://www.instagram.com/matthewkimmusic/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.1" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.4" cy="6.7" r="1.15" fill="currentColor"/></svg>
+    </a>
+  <a class="social-icon" href="https://www.linkedin.com/in/matthew-minjune-kim-a8986a354/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M7.3 10.2v6.5M7.3 7.5v.1M11.1 16.7v-3.5c0-2 1-3.1 2.7-3.1 1.7 0 2.9 1.1 2.9 3.3v3.3M11.1 12.9c0-1.6 1.1-2.8 2.8-2.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </a>
+</aside>
+
+
+
+<main>
+<section class="page-hero">
+ <h1>About <em>Matthew</em></h1>
+</section>
+<section class="section">
+ <div class="section-inner text-grid">
+  <div class="photo has-img"><img src="bio-photo.jpg" alt="Matthew Kim playing cello in a recording studio"></div>
+  <div class="bio-copy">
+   <p>Matthew is a composer and sound designer who also works in audio implementation and mixing. He currently studies and works at Berklee College of Music in Boston Massachusetts; however, he will be moving to Los Angeles in the Winter of 2027.</p>
+   <p>Matthew’s cello career began as a cellist for the New York Youth Symphony. They recorded the Grammy-award-winning album during the global pandemic featuring works by Florence Price, Valerie Coleman, and Jessie Montgomery. Having explored the world of recording and engineering steered his interest in going to Berklee.</p>
+   <p>He later went to Berklee honing his skills in video games and media composition, technical sound design, and audio engineering. He spent much of his time at Berklee making connections in the music industry to mix music for individual artists, compose and sound design for games, and take session playing gigs.</p>
+  </div>
+ </div>
+</section>
+</main>
+
+
+<footer>
+  <div>© 2026 Matthew Kim</div>
+</footer>
+
+<script>
+const menuBtn=document.querySelector('.menu');
+const navLinks=document.querySelector('.nav-links');
+menuBtn?.addEventListener('click',()=>{
+ const isOpen=navLinks.classList.toggle('open');
+ menuBtn.setAttribute('aria-expanded',isOpen);
+});
+</script>
+</body></html>
